@@ -7,10 +7,12 @@ import { AboutComponent } from './pages/about/about.component';
 import { UserComponent } from './pages/user/user.component';
 import { HeaderComponent } from './static/header/header.component';
 import { FooterComponent } from './static/footer/footer.component';
-import { NavComponent } from './static/nav/nav.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { BreadcrumbsComponent } from './static/breadcrumbs/breadcrumbs.component';
 import { SidebarComponent } from './static/sidebar/sidebar.component';
+import { ProductComponent } from './pages/product/product.component';
+import { CatalogComponent } from './pages/catalog/catalog.component';
+import { AppRoutingModule } from './app.routing-module';
 
 @NgModule({
   declarations: [
@@ -20,13 +22,15 @@ import { SidebarComponent } from './static/sidebar/sidebar.component';
     UserComponent,
     HeaderComponent,
     FooterComponent,
-    NavComponent,
     DashboardComponent,
     BreadcrumbsComponent,
-    SidebarComponent
+    SidebarComponent,
+    ProductComponent,
+    CatalogComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
